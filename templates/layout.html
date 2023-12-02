@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+        <script type="text/javascript" src="{{ url_for('static', filename='js/script.js') }}"></script>
+        <title>Random Strong Password</title>
+    </head>
+    <body>
+        <canvas></canvas>
+        <section class="main">
+            <h1 class="title">Random Strong Password</h1>
+            <div class="lengthSelector">
+                <form class="form" action="/" method="post">
+                    <input type="number" min="8" max="16" placeholder="Password length" name="length" autocomplete="off" autofocus>
+                    <input type="submit" value="Generate">
+                </form>
+            </div>
+            {% block body %}{% endblock %}
+        </section>
+    </body>
+</html>
