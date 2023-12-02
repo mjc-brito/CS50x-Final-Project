@@ -27,6 +27,8 @@ def index():
 
         # Ask for a length between 8 and 16
         passLength = request.form.get("length", type=int)
+        if type(passLength) != int:
+            passLength = 8
 
         if passLength > 8 and passLength <= 16:
             for i in range(passLength - 8):
