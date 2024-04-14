@@ -13,29 +13,26 @@ canvas {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.2);
+    width: 80%; /* Adjust the width as needed */
+    max-width: 500px; /* Set a maximum width if desired */
+    padding: 20px; /* Add some padding */
+    background-color: rgba(0, 0, 0, 0.8);
+    text-align: center; /* Center align content */
+}
+
+.title {
+    margin-bottom: 20px; /* Add some space between title and form */
+}
+
+.input-container {
     display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
-.title, .result, .form {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.input-container input[type="number"] {
+    width: calc(50% - 5px); /* Set input width to occupy half of the container width */
+    margin-right: 10px; /* Add some space between inputs */
 }
 
-.result {
-    top: 60%;
-}
-
-.form {
-    top: 50%;
-}
-
-input[type="number"] {
-    width: 100%;
+.input-container input[type="submit"] {
+    width: calc(50% - 5px); /* Set input width to occupy half of the container width */
 }

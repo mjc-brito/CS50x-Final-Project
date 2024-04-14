@@ -3,5 +3,4 @@ This repository contains my final project for the CS50x Introduction to Computer
 ## How To Use It
 Enter a number between 8 and 16 in the ‘Password Length’ field and click on ‘Generate’. Your new strong and random password will appear below.
 ## Future Work
-- Improve CSS to look better
 - Add a "copy" button (to copy the password with just one click)
