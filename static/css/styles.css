@@ -36,3 +36,7 @@ canvas {
 .input-container input[type="submit"] {
     width: calc(50% - 5px); /* Set input width to occupy half of the container width */
 }
+
+.result-container {
+    display: flex;
+}
