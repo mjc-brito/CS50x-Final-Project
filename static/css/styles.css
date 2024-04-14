@@ -39,4 +39,16 @@ canvas {
 
 .result-container {
     display: flex;
+    align-items: center; /* Center vertically */
 }
+
+.result {
+    flex: 1; /* Occupy 50% of the width */
+}
+
+#copyButton {
+    flex: 1; /* Occupy 50% of the width */
+    margin-top: 10px;
+    margin-left: 10px; /* Add some space between the button and the paragraph */
+}
+
